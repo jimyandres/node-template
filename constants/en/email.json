@@ -1,0 +1,17 @@
+{
+  "accountActivation": {
+    "subject": "Verify your account account",
+    "title": "Account Activation",
+    "greetings": "Dear",
+    "message1": "Please activate your account and complete the registration process:",
+    "linkMessage": "ACTIVATE MY ACCOUNT",
+    "regards": "Regards"
+  },
+  "forgotPassword": {
+    "subject": "Recover your password",
+    "title": "Recover your password",
+    "greetings": "Hi",
+    "message1": "Click on the button below to change your account password:",
+    "linkMessage": "RECOVER PASSWORD"
+  }
+}
