@@ -1,9 +1,9 @@
 {
-  "name": "mitacoin-ws",
+  "name": "@project-ws",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www MITACOIN_WS",
+    "start": "node ./bin/www @PROJECT_WS",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -26,7 +26,7 @@
     "mongoose-sanitizer-plugin": "^1.1.0",
     "mongoose-validator": "^2.1.0",
     "morgan": "~1.9.1",
-    "nodemailer": "^4.7.0",
+    "nodemailer": "^5.1.1",
     "nodemailer-express-handlebars": "^3.0.0",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
