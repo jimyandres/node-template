@@ -9,13 +9,13 @@ const { Mockgoose } = require('mockgoose');
 const mockgoose = new Mockgoose(mongoose);
 
 // Set appName and environment config
-process.argv[2] = '@PROJECT_WS';
+process.argv[2] = 'PROJECT_NAME_WS';
 process.env.NODE_ENV = 'test';
 
 before((done) => {
   // mock connection to DB
   mockgoose.prepareStorage().then(() => {
-    mongoose.connect('mongodb://localhost:27017/@project-ws-test', {
+    mongoose.connect('mongodb://localhost:27017/project-name-ws-test', {
       useCreateIndex: true,
       useNewUrlParser: true,
     }, err => done(err));
