@@ -76,7 +76,7 @@ These are some dependencies used in this repo
 [Nodemailer](https://github.com/nodemailer/nodemailer)
 - Send e-mails from Node.js
 
-# Intructions
+# Instructions
 
 - Clone project
 
@@ -88,18 +88,14 @@ git clone https://gitlab.com/evogit/templates/template-node.git
 
 ```
 npm install
-```
-
-or
-
-```
+# or
 yarn
 ```
 
-- Set-up the application name. Find and replace in the hole project:
+- Set-up the application name. Find and replace in the whole project:
 
-  - `@PROJECT` with your application's name in UPPERCASE e.g. `MY_NODE_PROJECT`.
-  - `@project` with your application's name in lowercase e.g. `my-node-project`.
+  - `PROJECT_NAME` with your application's name in UPPERCASE e.g. `MY_NODE_PROJECT`.
+  - `project-name` with your application's name in lowercase e.g. `my-node-project`.
   - Or change it as you prefer.
 
 - Set-up the `.env` file located in the project's root.
@@ -108,16 +104,14 @@ yarn
 
 ```
 npm start
-```
-
-or
-
-```
-yarn run start
+# or
+yarn start
 ```
 
 - To run the test cases
 
 ```
-mocha
+npm test
+# or
+yarn test
 ```
