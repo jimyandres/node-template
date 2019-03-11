@@ -148,7 +148,7 @@ router.post(
       });
       return next();
     } catch (err) {
-      return next(setError('badData', error.RegisterUserDB, err.message));
+      return next(setError('badData', error.DB.RegisterUser, err.message));
     }
   },
   middlewares.mail.sendEmailPassReset,
@@ -219,7 +219,7 @@ router.post(
           message: translateMsg(req.t)(msg.ActivationLinkSent),
         });
       } else {
-        throw new Error(error.ActivationToken);
+        throw new Error(error.SERVER.ActivationToken);
       }
       return next();
     } catch (err) {

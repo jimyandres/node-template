@@ -46,7 +46,7 @@ const account = ({ chai, nodemailerMock, server }) => describe('/account', () =>
             res.body.should.be.a('object');
             res.body.should.have.property('success').eql(false);
             res.body.should.have.property('error');
-            res.body.error.should.have.property('errorCode').eql('srv005');
+            res.body.error.should.have.property('errorCode').eql('srv002');
             res.body.error.should.have.property('message').eql('Error sending the account activation email');
             done();
           });
