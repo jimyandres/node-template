@@ -235,10 +235,7 @@ router.post(
 router.get(
   '/account/activate/:activationtoken',
   middlewares.authenticate.checkAccountActivationHash,
-  middlewares.wallet.generateWallet,
-  middlewares.transaction.saveTransaction,
   middlewares.authenticate.activateAccount,
-  middlewares.paymentGateway.createCustomer,
   (req, res, next) => res.json({
     success: true,
     messageCode: msg.ActivationSuccess,

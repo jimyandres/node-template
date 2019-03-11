@@ -18,13 +18,13 @@ const loadUser = async (req, res, next) => {
 
     if (!user) {
       const customMsg = `User ${userId} not found`;
-      return next(setError('notFound', error.UserNotFound, customMsg));
+      return next(setError('notFound', error.USER.UserNotFound, customMsg));
     }
 
     req.userResource = user;
     return next();
   } catch (err) {
-    return next(setError('serverUnavailable', error.DBResource, err.message));
+    return next(setError('serverUnavailable', error.DB.LoadUser, err.message));
   }
 };
 

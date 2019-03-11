@@ -37,6 +37,13 @@ module.exports = {
     UpdateUser: 'srv007',
     Resource: 'srv008',
     CantGetUser: 'srv009',
+    DuplicateEmailValidation: 'srv010',
+    EmailValidation: 'srv011',
+    PassResetHashValidation: 'srv012',
+    AccActivationHashValidation: 'srv013',
+    AccActivation: 'srv014',
+    AccActivationCheck: 'srv015',
+    LoadUser: 'srv016',
   },
 
   /*
@@ -55,5 +62,6 @@ module.exports = {
   /*
    * Unhandled errors
    */
+  401: 'usr005',
   UNDEFINED: {},
 };

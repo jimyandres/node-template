@@ -25,12 +25,12 @@ exports.emailUserExists = async (req, res, next) => {
     const user = await User.findOne(filterOptions);
 
     if (user) {
-      return next(setError('badData', error.UserExists));
+      return next(setError('badData', error.USER.UserExists));
     }
 
     return next();
   } catch (err) {
-    return next(setError('serverUnavailable', error.DBResource, err.message));
+    return next(setError('serverUnavailable', error.DB.DuplicateEmailValidation, err.message));
   }
 };
 
@@ -42,12 +42,12 @@ exports.emailUserNotExists = async (req, res, next) => {
     const user = await User.findOne({ email: req.body.email });
 
     if (!user) {
-      return next(setError('badData', error.InvalidEmail));
+      return next(setError('badData', error.USER.InvalidEmail));
     }
 
     return next();
   } catch (err) {
-    return next(setError('serverUnavailable', error.DBResource, err.message));
+    return next(setError('serverUnavailable', error.DB.EmailValidation, err.message));
   }
 };
 
@@ -62,12 +62,12 @@ exports.checkPasswordResetHash = async (req, res, next) => {
     });
 
     if (!user) {
-      return next(setError('badData', error.InvalidHash));
+      return next(setError('badData', error.USER.InvalidHash));
     }
 
     return next();
   } catch (err) {
-    return next(setError('serverUnavailable', error.DBResource, err.message));
+    return next(setError('serverUnavailable', error.DB.PassResetHashValidation, err.message));
   }
 };
 
@@ -82,9 +82,9 @@ exports.checkAccountActivationHash = async (req, res, next) => {
       req.userResource = user;
       return next();
     }
-    return next(setError('badData', error.ActivationLink));
+    return next(setError('badData', error.USER.ActivationLink));
   } catch (err) {
-    return next(setError('serverUnavailable', error.DBResource, err.message));
+    return next(setError('serverUnavailable', error.DB.AccActivationHashValidation, err.message));
   }
 };
 
@@ -101,7 +101,7 @@ exports.activateAccount = async (req, res, next) => {
     });
     return next();
   } catch (err) {
-    return next(setError('serverUnavailable', error.DBResource, err.message));
+    return next(setError('serverUnavailable', error.DB.AccActivation, err.message));
   }
 };
 
@@ -115,8 +115,8 @@ exports.verifyAccountActivation = async (req, res, next) => {
     if (user && user.active) {
       return next();
     }
-    return next(setError('unauthorized', error.AccountNotActivated));
+    return next(setError('unauthorized', error.USER.AccountNotActivated));
   } catch (err) {
-    return next(setError('serverUnavailable', error.DBResource, err.message));
+    return next(setError('serverUnavailable', error.DB.AccActivationCheck, err.message));
   }
 };

@@ -34,7 +34,7 @@ module.exports = (useSchema, isRegister, useJoiError = true) => {
         return Joi.validate(req.body, _schema, _validationOptions, (err, data) => {
           if (err) {
             // Joi Error
-            const JoiError = setError('badData', error.InvalidProvidedData, null, {
+            const JoiError = setError('badData', error.USER.InvalidProvidedData, null, {
               original: err._object,
 
               // fetch only message and type from each error
@@ -45,7 +45,7 @@ module.exports = (useSchema, isRegister, useJoiError = true) => {
             });
 
             // Custom Error
-            const CustomError = setError('badData', error.InvalidProvidedData, err.message);
+            const CustomError = setError('badData', error.USER.InvalidProvidedData, err.message);
 
             return next(_useJoiError ? JoiError : CustomError);
           }

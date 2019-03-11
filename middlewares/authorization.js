@@ -11,7 +11,7 @@ const isUserOwner = (resource, user) => user.equals(resource);
 exports.verifyAdmin = (req, res, next) => (
   isAdmin(req.user)
     ? next()
-    : next(setError('forbidden', error.OnlyAdminAllowed))
+    : next(setError('forbidden', error.USER.OnlyAdminAllowed))
 );
 
 /*
@@ -20,7 +20,7 @@ exports.verifyAdmin = (req, res, next) => (
 exports.verifyNotAdmin = (req, res, next) => (
   !isAdmin(req.user)
     ? next()
-    : next(setError('forbidden', error.AdminNotAllowed))
+    : next(setError('forbidden', error.USER.AdminNotAllowed))
 );
 
 /*
@@ -29,5 +29,5 @@ exports.verifyNotAdmin = (req, res, next) => (
 exports.verifyUser = (req, res, next) => (
   isAdmin(req.user) || isUserOwner(req.userResource, req.user)
     ? next()
-    : next(setError('forbidden', error.ForbiddenAction))
+    : next(setError('forbidden', error.USER.ForbiddenAction))
 );

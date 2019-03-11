@@ -34,7 +34,7 @@ exports.sendEmailAccountVerification = async (req, res, next) => {
 
     return smtpTransport.sendMail(messageTemplate(data));
   } catch (err) {
-    return next(setError('serverUnavailable', error.CantSendActivationMail, err.message));
+    return next(setError('serverUnavailable', error.EMAIL.CantSendActivation, err.message));
   }
 };
 
@@ -69,6 +69,6 @@ exports.sendEmailPassReset = async (req, res, next) => {
 
     return smtpTransport.sendMail(messageTemplate(data));
   } catch (err) {
-    return next(setError('serverUnavailable', error.CantSendForgotPassMail, err.message));
+    return next(setError('serverUnavailable', error.EMAIL.CantSendForgotPass, err.message));
   }
 };

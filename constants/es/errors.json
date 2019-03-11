@@ -1,6 +1,48 @@
 {
   "user": {
-    "usr001": "La contraseña no fue entregada",
-    "usr005": "Error de autenticación. Usted no ha iniciado sesión"
+    "usr000": "Undefined user error",
+    "usr001": "Contraseña no proporcionada",
+    "usr002": "Correo no proporcionado",
+    "usr003": "Correo/contraseña errónea. Por favor intenta de nuevo.",
+    "usr004": "Ya existe un usuario con el correo proporcionado.",
+    "usr005": "Error de autenticación. No se ha iniciado sesión",
+    "usr006": "Sólo los Administradores están autorizados de realizar esta operación",
+    "usr007": "No se ha encontrado el correo",
+    "usr008": "Usted no está autorizado para realizar ésta operación.",
+    "usr009": "Administrators are not allowed to perform this operation",
+    "usr010": "La cuenta se encuentra bloqueada. Intenta de nuevo más tarde",
+    "usr011": "Cuenta bloqueada por superar el limite de intentos de inicio de sesión",
+    "usr012": "Usuario no encontrado",
+    "usr013": "El Token proporcionado es incorrecto o ha expirado.",
+    "usr014": "El link proporcionado no es correcto. Error de Token",
+    "usr015": "Su cuenta aún no ha sido activada",
+    "usr016": "Recurso no encontrado",
+    "usr017": "Error validando la información proporcionada"
+  },
+  "server": {
+    "srv001": "La cuenta proporcionada no existe o no ha sido activada aún.",
+    "srv002": "Error al enviar el correo de activación de la cuenta",
+    "srv003": "Error al intentar actualizar la información del usuario en la Base de Datos",
+    "srv004": "Error al guardar la contraseña",
+    "srv005": "Error al registrar el usuario en la Base de Datos",
+    "srv006": "Error al guardar la nueva contraseña en la Base de Datos",
+    "srv007": "Error al actualizar la información del usuario en la  Base de Datos",
+    "srv008": "Error al obtener el recurso de la Base de Datos",
+    "srv009": "Error al obtener la información del usuario de la Base de Datos",
+    "srv010": "Error al validar la existencia del correo en la Base de Datos",
+    "srv011": "Error al validar el correo del usuario en la Base de Datos",
+    "srv012": "Error al validar la Token de restauración de contraseña de la Base de Datos",
+    "srv013": "Error al validar el Token de activación de cuenta en la Base de Datos",
+    "srv014": "Error al activar la cuenta en la Base de Datos",
+    "srv015": "Error al validar la activación de la cuenta en la Base de Datos",
+    "srv016": "Error al obtener el usuario de la Base de Datos"
+  },
+  "network": {},
+  "external": {
+    "ext001": "Error al enviar el correo de activación de la cuenta desde el servidor SMTP",
+    "ext002": "Error al enviar el correo de restauración the contraseña desde el servidor SMTP"
+  },
+  "undefined": {
+    "undef000": "Error inesperado"
   }
 }

@@ -16,8 +16,8 @@
     "usr013": "The given hash is incorrect or has expired.",
     "usr014": "The given link is not valid. Token error",
     "usr015": "Your account has not been yet activated",
-    "usr019": "Resource not found",
-    "usr020": "Error validating the provided data",
+    "usr016": "Resource not found",
+    "usr017": "Error validating the provided data"
   },
   "server": {
     "srv001": "The provided account does not exist or it has been already activated",
@@ -28,12 +28,19 @@
     "srv006": "Error saving the new password into the Data Base",
     "srv007": "Error updating the user data into the Data Base",
     "srv008": "Error reaching the resource from the Data Base",
-    "srv009": "Error getting the user data from the Data Base"
+    "srv009": "Error getting the user data from the Data Base",
+    "srv010": "Error validating the duplicity of user's email from the Data Base",
+    "srv011": "Error validating the user's email from the Data Base",
+    "srv012": "Error validating the password reset hash from the Data Base",
+    "srv013": "Error validating the account activation hash from the Data Base",
+    "srv014": "Error activating the account in the Data Base",
+    "srv015": "Error validating account activation from the Data Base",
+    "srv016": "Error getting the requested user from the Data Base"
   },
   "network": {},
   "external": {
-    "ext001": "Error sending the account activation mail",
-    "ext002": "Error sending the forgot password mail"
+    "ext001": "Error sending the account activation email from the SMTP server",
+    "ext002": "Error sending the forgot password email from the SMTP server"
   },
   "undefined": {
     "undef000": "Unexpected error"

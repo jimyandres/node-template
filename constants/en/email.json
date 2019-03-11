@@ -1,6 +1,6 @@
 {
   "accountActivation": {
-    "subject": "Verify your account account",
+    "subject": "Verify your account",
     "title": "Account Activation",
     "greetings": "Dear",
     "message1": "Please activate your account and complete the registration process:",
