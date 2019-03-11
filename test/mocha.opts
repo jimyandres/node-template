@@ -1,0 +1,4 @@
+# mocha.opts
+
+  --exit
+  --timeout 60000

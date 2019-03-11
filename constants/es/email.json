@@ -1,0 +1,17 @@
+{
+  "accountActivation": {
+    "subject": "Verifica tu cuenta",
+    "title": "Activación de la Cuenta",
+    "greetings": "Hola",
+    "message1": "Por favor activa tu cuenta y completa el proceso de registro:",
+    "linkMessage": "ACTIVAR MI CUENTA",
+    "regards": "Feliz día"
+  },
+  "forgotPassword": {
+    "subject": "Restablezca tu contraseña",
+    "title": "Restablecer contraseña",
+    "greetings": "Hola",
+    "message1": "Haz click en el botón a continuación para cambiar la contraseña de tu cuenta:",
+    "linkMessage": "RESTABLECER CONTRASEÑA"
+  }
+}
