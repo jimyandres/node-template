@@ -1,0 +1,13 @@
+{
+  "server": {
+    "srv000": "Undefined server message",
+    "srv001": "A restore link was sent to your email",
+    "srv002": "Hash string is valid",
+    "srv003": "Successful log out",
+    "srv004": "Successful registration. An activation link has been sent to your email",
+    "srv005": "Successful log in",
+    "srv006": "Successful password reset",
+    "srv007": "The activation link has been sent to your email",
+    "srv008": "Account activated, ready to use"
+  }
+}
