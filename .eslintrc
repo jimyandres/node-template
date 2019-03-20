@@ -1,12 +1,27 @@
 {
   "extends": "airbnb",
-  "plugins": ["jest"],
+  "plugins": [
+    "jest"
+  ],
   "env": {
     "jest/globals": true,
-    "node": true
+    "node": true,
+    "mocha": true
   },
   "rules": {
-    "no-unused-vars": ["error", {"argsIgnorePattern":"next"}],
-    "no-underscore-dangle": ["error", { "allow": ["_id"] }]
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "next"
+      }
+    ],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "_id"
+        ]
+      }
+    ]
   }
 }

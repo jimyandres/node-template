@@ -28,7 +28,7 @@ const switchCaseF = cases => key => executeIfFunction(switchCase(cases)(key));
  * @param {string} nameSpace - name space where the translation exists
  * @param {string} Code - code to identify the translation string
  */
-const codeSwitch = (nameSpace, Code) => switchCaseF({
+const codeSwitch = (nameSpace, Code = '') => switchCaseF({
   usr: `${nameSpace}:user.${Code}`,
   srv: `${nameSpace}:server.${Code}`,
   net: `${nameSpace}:network.${Code}`,

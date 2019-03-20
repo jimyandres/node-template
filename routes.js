@@ -52,6 +52,10 @@ router.use((err, req, res, next) => {
     console.error('Unhandled error', err);
   }
 
+  if (!e.errorCode) {
+    console.error(`${Date()}: Error with no error-code`, err);
+  }
+
   res.locals.message = err.message || 'Something went wrong';
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
